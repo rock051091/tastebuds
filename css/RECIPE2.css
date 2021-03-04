@@ -1,0 +1,222 @@
+.nav_item > li:nth-child(3) a{
+	color: #1e392a;
+	border-bottom: 2px solid #1e392a;
+}
+@Media screen and (max-width:767px){
+    .nav_item > li:nth-child(3) a{
+	border-bottom: none;
+}
+}
+#full-video{
+    width: 100%;
+}
+
+.recipe-header{
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.back-btn{
+    display: inline-block;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    border: 1px solid #444;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipe-content{
+    margin: 20px auto;
+    background-color: #f3f3f3;
+    font-family: Georgia, serif;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #333333;
+    max-width: 650px;
+    border: 2px solid #3cc47c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipe-img-corner{
+    float: right;
+    margin: 0 0 10px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.recipe-img{
+    float: right;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.recipe-img img{
+    width: 150px;
+    height: 150px;
+}
+.recipe-img .star{
+    display: inline;
+    font-size: 16px;
+}
+.course-name{
+    color: #3cc47c;
+    line-height: 1.3em;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.course-introduce{
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: 10px;
+}
+
+.course-section,
+.time-section,
+.remark-section{
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    margin: 10px 0 0 10px;
+}
+.course-list,
+.time-list,
+.remark-list{
+    display: block;
+}
+.type-a{
+    display: inline-block;
+    min-width: 130px;
+    font-weight: bold
+}
+
+.subtitle{
+    color: #3cc47c;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    margin: 20px auto 5px 10px;
+}
+
+.ingredient-section,
+.instruction-section{
+    display: block;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+ul, ol{
+    display: block;
+    margin-left: 30px !important;
+}
+
+li{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nutrition-section{
+    display: block;
+    text-align: center;
+}
+
+.nutrition-list{
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 250px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    color: black;
+}
+
+.nutrition-title{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+.nutrition-recipe{
+    display: block;
+}
+.nutrition-bg-line{
+    height: 10px;
+    background-color: #333;
+}
+
+.nutrition-serving{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-weight: bold;
+    
+}
+.nutrition-item{
+    border-top: 1px solid #333;
+    clear: both;
+    display: block;
+}
+.nutrition-item{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    text-align: left;
+    
+}
+.nutrition-percentage{
+    float: right;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px; 
+     
+}
+.nutrition-line{
+    background-color: #333;
+    height: 5px;
+    font-size: 1px;
+}
+.nutrition-sub-item{
+    border-top: 1px solid #333;
+    clear: both;
+    margin: 0 0 0 14px;
+}
+
+.nutrition-warning{
+    border-top: 1px solid #333;
+    clear: both;
+    padding-top: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+}
+
+.footer{    
+    text-align: center;
+    background-color: #1e392a;
+    color:#888;
+    padding: 15px 0;
+}
+.footer a{
+    display: inline;
+    margin: 0 10px;
+}
+.footer p{
+    margin: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

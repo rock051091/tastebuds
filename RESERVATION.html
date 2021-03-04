@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATION</title>
+    <link rel="stylesheet" href="./css/RESERVATION.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+       
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" id="navctrl">
+        <label for="navctrl" id="hb"><span class="line"></span></label>
+        <nav>
+            <h1><a href="index.html"><img src="./image/LOGO.png" alt=""></a></h1>
+            
+            <ul class="nav_item">
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="RESERVATION.html">RESERVATION</a></li>
+                <li><a href="RECIPE.html">RECIPES</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="cb-slideshow">
+            <li><span></span><div><h3>HOSPITALITY</h3></div></li>
+            <li><span></span><div><h3>RELAX</h3></div></li>
+            <li><span></span><div><h3>FOOD</h3></div></li>
+            <li><span></span><div><h3>ATMOSPHERE</h3></div></li>
+            <li><span></span><div><h3>FUN</h3></div></li>
+            <li><span></span><div><h3>RESERVE NOW</h3></div></li>
+    </div>
+
+
+<div class="store">
+    <div class="store-info">
+        <h1 class="store-name">Taste Buds</h1>
+        <div class="store-details">
+            <div class="det"><i class="fas fa-map-marker-alt"></i> No. 300, Zhongda Rd., Zhongli Dist., Taoyuan City</div>
+            <div class="det"><i class="fas fa-phone-alt"></i> +886 3 422 71519</div>
+            <div class="det"><i class="far fa-calendar-check"></i> Sunday to Satuday</div>
+            <div class="det"><i class="far fa-clock"></i> 11:00-22:00</div>
+            <div class="det"><i class="far fa-envelope"></i>tastebuds@contact.with.me</div>
+            
+          </div>
+    </div>
+</div>
+
+    <section id="booking-now" class="booking-section">
+    <div class="diner-field">
+        <p>Numbers of Guests</p>
+        <div class="party-num">
+            <select id="adults-picker" class="adults">
+                <option>Please select the number of guests</option>
+                <option value="1">1 adult(s)</option>
+                <option value="2"selected>2 adult(s)</option>
+                <option value="3">3 adult(s)</option>
+                <option value="4">4 adult(s)</option>
+                <option value="5">5 adult(s)</option>
+                <option value="6">6 adult(s)</option>
+                <option value="7">7 adult(s)</option>
+                <option value="8">8 adult(s)</option>
+                <option value="9">9 adult(s)</option>
+                <option value="10">10 adult(s)</option>
+            </select>
+            <select id="kids-picker" class="kids">
+                <option value="0">0 kid(s)</option>
+                <option value="1">1 kid(s)</option>
+                <option value="2">2 kid(s)</option>
+                <option value="3">3 kid(s)</option>
+                <option value="4">4 kid(s)</option>
+                <option value="5">5 kid(s)</option>
+                <option value="6">6 kid(s)</option>
+                <option value="7">7 kid(s)</option>
+                <option value="8">8 kid(s)</option>
+                <option value="9">9 kid(s)</option>
+                <option value="10">10 kid(s)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="date-field">
+        <p>Date</p>
+        <div id="date-picker" class="date">
+            <label ><input type="date" id="booking_dates" class="dates" required pattern="\d{2}-\d{2}-\d{4}" >  
+            </label>
+        </div>
+    </div>
+    <hr class="distinguish-hr">
+    <p class="diner-period">Time</p>
+    <p class="diner-notice">*Gray means the time slot is fully booked. Please view other available dates.</p>
+    <div class="book-content">
+        <div class="period-area">
+            <span class="period-word">Noon</span>
+            <hr class="period-line">
+        </div>
+        </div>
+        <div class="period-button">
+            <button class="btn"><span class="btn-time">11:00</span></button>
+            <button class="btn"><span class="btn-time">11:30</span></button>
+            <button class="btn"><span class="btn-time">12:00</span></button>
+            <button class="btn"><span class="btn-time">12:30</span></button>
+            <button class="btn"><span class="btn-time">13:00</span></button>
+            <button class="btn"><span class="btn-time">13:30</span></button>
+        </div>
+        <div class="book-content">
+            <div class="period-area">
+                <span class="period-word">AFTERNOON</span>
+                <hr class="period-line">
+        </div>
+        </div>
+        <div class="period-button">
+            <button class="btn"><span class="btn-time"></span>14:00</span></button>
+            <button class="btn"><span class="btn-time">14:30</span></button>
+            <button class="btn"><span class="btn-time">15:00</span></button>
+            <button class="btn"><span class="btn-time">15:30</span></button>
+            <button class="btn"><span class="btn-time">16:00</span></button>
+            <button class="btn"><span class="btn-time">16:30</span></button>
+        </div>
+        <div class="book-content">
+            <div class="period-area">
+                <span class="period-word">EVENING</span>
+                <hr class="period-line">
+        </div>
+        </div>
+        <div class="period-button">
+            <button class="btn"><span class="btn-time">17:00</span></button>
+            <button class="btn"><span class="btn-time">17:30</span></button>
+            <button class="btn"><span class="btn-time">18:00</span></button>
+            <button class="btn"><span class="btn-time">18:30</span></button>
+            <button class="btn"><span class="btn-time">19:00</span></button>
+            <button class="btn"><span class="btn-time">19:30</span></button>
+            <button class="btn"><span class="btn-time">20:00</span></button>
+            <button class="btn"><span class="btn-time">20:30</span></button>
+        </div>
+        <div class="confirm-bar">
+            <div class="confirm-bar">
+              <a href="./RESERVATION2.html"><button class="confirm-btn">
+                  <span class="confirm-txt">Next Step</span>
+              </button></a>
+      
+          </div>
+</section>
+
+
+</div>
+<div class="footer">
+    <div class="icon_container">
+        <a href="https://www.facebook.com"><img src="./image/footer/facebook.png"></a>
+        <a href="https://twitter.com"><img src="./image/footer/twitter.png"></a>
+        <a href="https://www.instagram.com"><img src="./image/footer/instagram.png"></a>
+    </div>
+   <p>&copy; copyright 2020 by Zachary</p> 
+</div>
+
+<script src="vendor/jQuery.js"></script>
+<script>
+    $(".btn").on("click", function(){
+    $(".btn").removeClass("on");
+    $(this).toggleClass("on");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,518 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header*/
+.main-header{
+    /* background-color:black; */
+    /* opacity: .7; */
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px auto;
+    /* color: #945D60 */
+    
+}
+.main-header .container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.main-header .logo{
+    width: 300px;
+}
+.main-header .logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+.main-header .main-nav{
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.main-header .main-nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 25px;
+    position: relative;
+    transform: translateY(5px);
+    transition: .3s;
+}
+.main-header .main-nav a:hover{
+    transform: translateY(-5px);
+}
+.main-header .main-nav a:after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom:0;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    transition: .3s;
+}
+.main-header .main-nav a:hover:after{
+    left:0;
+    right:0;
+} 
+
+.section{
+    background-image: url(../image/slider01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.banner img{
+    width: 100%;
+
+}
+
+.wrap{
+    width: 1200px;
+    margin: auto;
+}
+
+.banner2{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background: linear-gradient(135deg,#fff 30%, transparent 50% ) center center/ 100% 100%,
+    url(../image/slider02.jpg) right center / auto 100%;
+    background-size: cover;
+}
+.banner2 .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: auto;
+
+}
+.banner2 .container .container_text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner2 .container .container_text > h2{
+    font-size: 42px;
+    color: #1e392a;
+    margin: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-bottom: 1px solid #333; */
+}
+.banner2 .container .container_text > p{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+}
+.banner2 .container .container_text .btn{
+    margin: 10px auto;
+    background-color: #fff;
+    border: 2px solid #1e392a;
+    color: #1e392a;
+    padding: 10px 20px;   
+    border-radius: 10px;
+    font-size: 26px;
+    position: relative;
+    top: 10px;
+    transition: all .1s linear;
+}
+.banner2 .container .container_text .btn:hover{
+    cursor: pointer;
+    background-color: #1e392a;
+    color:#fff;
+    border: 1px solid #1e392a;
+}
+
+/* .about{
+    padding: 40px 0 60px;
+}
+.about .wrap{
+    display: flex;
+
+}
+.about .wrap .item{
+    width: 400px;
+    margin: 0 10px;
+    text-align: center;
+}
+.about > h2{
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+}
+.about > p{
+    width: 760px;
+    margin: auto;
+    padding: 0 0 40px;
+    text-align: center;
+} */
+
+.products .wrap{
+    display: flex;
+    margin: 50px auto;
+}
+.products .item{
+    width: 50%;
+}
+.products .item img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.item h2{
+    font-size: 42px;
+    /* padding: 0 0 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products .text p{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.products .btn{
+    margin: 10px auto;
+    background-color: #fff;
+    border: 2px solid #1e392a;
+    color: #1e392a;
+    padding: 10px 20px;   
+    border-radius: 10px;
+    font-size: 26px;
+    position: relative;
+    top: 10px;
+    transition: all .1s linear;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products .btn:hover{
+    cursor: pointer;
+    background-color: #1e392a;
+    color:#fff;
+    border: 1px solid #1e392a;
+}
+.products .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products .text > h2{
+    font-size: 42px;
+    color: #1e392a;
+    margin: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products .text > p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.service{
+    padding: 0 0 40px 0;
+    /* background-color: #ffa; */
+}
+.service > h2{
+    width: 1200px;
+    text-align: center;
+    font-size: 42px;
+    color: #1e392a;
+    margin: 0 auto 20px auto;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.service > p{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+    color:black;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.service .wrap{
+    display: flex;
+}
+.service .item{
+    margin: 0 10px;
+    width: 400px;
+    text-align: center;
+}
+.service .item-txt h4{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.service .item img{
+    width: 100%;
+}
+
+.service .btn{
+    /* margin-top: 20px; */
+    display: flex;
+    background-color:#fff;
+    color: #1e392a;
+    border: 2px solid #1e392a;
+    padding: 10px 20px;   
+    border-radius: 10px;
+    font-size: 26px;
+    transition: all .25s linear;
+    position: relative;
+    margin: 20px auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.service .btn:hover{
+    cursor: pointer;
+    background-color: #1e392a;
+    color: white;
+    border: 1px solid #1e392a;
+}
+
+.btn2 a{
+    text-decoration: none;
+}
+
+.banner3{
+    width: 100%;
+    height: 500px;
+    background-color: #ccc;
+    background: url(../image/kitchen.jpg) right center / auto 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner3 .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: auto;
+
+}
+.banner3 .container .container_text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container_text > h2{
+    font-size: 42px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    color: #1e392a;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.recipe_wrap{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 20px auto 10px auto;
+    /* border: 1px solid red; */
+    
+}
+.recipe_wrap .recipe_item{
+    width: 368px;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    /* border: 1px solid #007bff; */
+    transform: translateY(0px);
+    transition: .25s;
+}
+.recipe_wrap .recipe_item img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    
+}
+.recipe_wrap .recipe_item h3{
+    color:#1e392a;
+    border-bottom: 1px solid #888;
+    padding-bottom: .3em;
+    margin-bottom: .4em;
+    font-weight: 900;
+    transition: .25s;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.recipe_wrap .recipe_item p{
+    line-height: 1.6;
+    font-weight: 300;
+    transition: .25s;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.recipe_wrap .recipe_item .text{
+    padding: 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.recipe_wrap .recipe_item .text:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left:0;
+    right:0;
+    border-top: 50px solid transparent;
+    /* border-left: 184px solid white;
+    border-right: 184px solid white; */
+    transform: translateY(-100%);
+    transform-origin: bottom bottom;
+}
+
+.recipe_wrap .recipe_item:hover{
+    transform: translateY(-50px)
+}
+.recipe_item:hover .text{
+    background-image: linear-gradient(0deg,#fb8076,#feb85d);
+}
+/*.recipe_item:hover .text:before{
+ border-left: 184px solid #feb85D;
+border-right: 184px solid #feb85D; 
+}*/
+.recipe_item:hover h3{
+    color:#fff;
+    border-bottom-color:#fff;
+}
+.recipe_item:hover p{
+    color:#fff;
+}
+.recipe_item .btn{
+    background-color:#fff;
+    color: #3cc47c;
+    border: 1px solid #3cc47c;
+    padding: 5px 10px;   
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    transition: all .25s linear;
+    
+
+}
+
+.recipe_item .btn:hover{
+    cursor: pointer;
+    background-color: #3cc47c;
+    color: white;
+    border: 1px solid #3cc47c;
+}
+
+.recipe_container a{
+    text-decoration: none;;
+}
+.recipe_container .btn2{
+    display: flex;
+    background-color:white;
+    color: #1e392a;
+    border: 2px solid #1e392a;
+    padding: 10px 20px;   
+    border-radius: 10px;
+    font-size: 26px;
+    transition: all .25s linear;
+    position: relative;
+    margin: 0 auto;   
+}
+
+.recipe_container .btn2:hover{
+    cursor: pointer;
+    background-color: #1e392a;
+    color: white;
+    border: 2px solid #1e392a
+}
+
+/*.recipe_container{
+    /* height: 110vh; */
+    /* border: 1px solid black; */
+    /* padding: 0 0 50px 0; */
+    /* margin: 0 0 50px 0; 
+}*/
+
+#go_top{
+    width: 50px;
+    height: 50px;
+    background: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color: white;
+    background-color:black;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .map-section{
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      margin: 150px auto;
+  }
+  .map,
+  .map-info{
+      width: 550px;
+      margin: 0 10px;
+  }
+  .map-item{
+      width: flex;
+      margin-top: 20px;
+  }
+  .item-icon{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+  }
+  .item-icon img{
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+  }
+  .item-txt{
+      display: inline-block;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+.footer{    
+    text-align: center;
+    background-color: #1e392a;
+    color:#888;
+    padding: 15px 0;
+}
+.footer a{
+    display: inline;
+    margin: 0 10px;
+}
+.footer p{
+    margin: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
